@@ -355,7 +355,8 @@ body {
   .form__btns {
     border-top: 1px solid #e4e7e8;
     padding-top: 25px;
-    text-align: center; }
+    text-align: center;
+    margin-top: 25px; }
   .form__title {
     font-size: 1.4rem;
     color: #6e7f7b; }
@@ -396,3 +397,35 @@ body {
     .form a:hover, .form a:focus, .form a:active, .form a--active {
       color: #26b167;
       border-color: #26b167; }
+  .form__group {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .form__field {
+    padding: 10px;
+    border: 1px solid #9eabad;
+    width: 100%; }
+    .form__field--sm {
+      width: 30%; }
+    .form__field--md {
+      width: calc(70% - 20px); }
+  .form__label {
+    display: block;
+    width: 100%;
+    padding: 5px 0; }
+  .form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px center; }

@@ -20,8 +20,36 @@
 				</div>
 			</div>	
 			<div class="form__body">
+				<div class="form__group">
+					<label for="number" class="form__label">
+						Credit card number
+					</label>
+					<input type="text" class="form__field" name="number" id="number" minlength="16" maxlength="16" pattern="[0-9]"  required>
+				</div>
+				<div class="form__group">
+					<label for="month" class="form__label">
+						Expiration date
+					</label>
+					<select name="month" id="month" class="form__field form__field--md" required>
+						<option value="" selected disabled>Month</option>
+						<option value="1">Jan</option>
+						<option value="2">Feb</option>
+						<option value="3">Mar</option>
+					</select>
+					<select name="year" id="year" class="form__field form__field--sm" required>
+						<option value="" selected disabled>Year</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+					</select>
+				</div>
+				<div class="form__group">
+					<label class="form__label" for="cvv">CVV</label>
+					<input class="form__field form__field--sm" type="text" name="cvv" id="cvv" minlength="3" maxlength="4" pattern="[0-9]" required>
+					<span>3 or 4 digits - <a href="#"> view example</a></span>
+				</div>
 				<div class="form__btns">
-					<button class="form__btn">Pay</button>
+					<button type="submit" class="form__btn">Pay</button>
 					<a href="#">Cancel order</a>
 				</div>
 			</div>
